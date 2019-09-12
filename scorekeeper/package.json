@@ -34,5 +34,10 @@
   "bugs": {
     "url": "https://github.com/AnnaLangner/32.6.ScoreBoard/issues"
   },
-  "homepage": "https://github.com/AnnaLangner/32.6.ScoreBoard#readme"
+  "homepage": "https://github.com/AnnaLangner/32.6.ScoreBoard#readme",
+  "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "react-test-renderer": "^16.9.0"
+  }
 }
