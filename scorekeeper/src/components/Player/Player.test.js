@@ -16,10 +16,13 @@ it('renders correct name', () => {
 });
 
 it('renders correct score', () => {
-    const playerScorePassed = new Number();
-    const playerComponent = shallow(<Player name={playerScorePassed} />);
+    const playerScorePassed = 4;
 
-    const playerScoreRendered = playerComponent.find('.Player__score').Number.text();
+    const playerComponent = shallow(<Player score={playerScorePassed} />);
+
+    const playerScoreRendered = Number(
+        playerComponent.find('.Player__score').text()
+    );
 
     expect(playerScoreRendered).toEqual(playerScorePassed);
 });
@@ -43,5 +46,5 @@ it('should call onPlayerScoreChange with 1 when minus button is clicked', () => 
 
     minusButton.simulate('click');
 
-    expect(mockedOnPlayerScoreChange).toBeCalledWith(1);
+    expect(mockedOnPlayerScoreChange).toBeCalledWith(-1);
 });
