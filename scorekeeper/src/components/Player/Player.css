@@ -1,0 +1,25 @@
+.Player {
+    background: #D1C4E9;
+    border: 1px solid #FF66CC;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Player__name {
+    width: 50%;
+}
+
+.Player__score {
+    width: 25%;
+}
+
+.Player__button {
+    width: 5%;
+    text-align: center;
+    background: #6666FF;
+    cursor: pointer;
+    border: 1px solid #6f42c1;
+    border-radius: 3px;
+}
